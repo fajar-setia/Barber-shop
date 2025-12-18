@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import Logo from "../assets/images/file.svg";
+import Logo from "../assets/images/fileFooter.png";
 
 const isMenuOpen = ref(false);
 
@@ -17,8 +17,8 @@ const navLinks = [
 </script>
 
 <template>
-  <nav class="shadow-lg sticky top-0 z-50 w-full">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+  <nav class="shadow-xl top-0 z-50 w-full bg-transparent rounded-2xl">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <!-- MAIN ROW -->
       <div class="flex items-center h-20">
         <!-- LOGO (KIRI, DEMPET) -->
@@ -30,9 +30,9 @@ const navLinks = [
           />
           <div class="leading-tight sm:-ml-20">
             <span class="block text-xl font-bold">
-              <span class="text-zinc-600">Neat Hair </span> <span class="text-black">Studio</span>
+              <span class="text-blue-500">Neat Hair </span> <span class="text-white">Studio</span>
             </span>
-            <span class="block text-sm font-medium text-black">
+            <span class="block text-sm font-medium text-white">
               be confident
             </span>
           </div>
@@ -46,7 +46,7 @@ const navLinks = [
               v-for="link in navLinks"
               :key="link.name"
               :href="link.path"
-              class="text-black hover:text-blue-600 font-medium text-base transition-colors duration-200 relative group"
+              class="text-white hover:text-blue-600 font-medium text-base transition-colors duration-200 relative group"
             >
               {{ link.name }}
               <span

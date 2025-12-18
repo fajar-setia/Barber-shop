@@ -11,7 +11,7 @@ import {
 </script>
 
 <template>
-  <footer class="bg-linear-to-br from-blue-950 via-blue-900 to-blue-950 text-white">
+  <footer class="z-50 bg-linear-to-br from-blue-500 via-blue-400 to-blue-500 text-white">
     <!-- Main Content -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
