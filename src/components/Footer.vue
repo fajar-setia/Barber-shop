@@ -21,7 +21,7 @@ import {
           <img
             :src="Logo"
             alt="Neat Hair Studio"
-            class="h-16 sm:h-20 w-auto object-contain"
+            class="hidden sm:block h-16 sm:h-56 w-auto object-contain lg:-ml-8 lg:-mt-24 lg:-mb-16"
           />
           <p class="text-blue-200 text-sm leading-relaxed">
             Modern barbershop with classic precision. Look sharp, feel confident with our expert stylists.
@@ -119,7 +119,7 @@ import {
                 <div class="bg-blue-800/50 p-2 rounded-lg">
                   <Clock class="w-4 h-4" />
                 </div>
-                <span>09:00 – 21:00</span>
+                <span>20:00 – 22:00</span>
               </div>
             </div>
           </div>

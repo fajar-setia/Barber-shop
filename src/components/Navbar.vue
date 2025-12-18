@@ -22,11 +22,11 @@ const navLinks = [
       <!-- MAIN ROW -->
       <div class="flex items-center h-20">
         <!-- LOGO (KIRI, DEMPET) -->
-        <a href="/" class="lg:-ml-20 inline-flex items-center gap-2 w-fit shrink-0">
+        <a href="/" class="sm:-ml-20 inline-flex items-center gap-2 w-fit shrink-0">
           <img
             :src="Logo"
             alt="Neat Hair Studio"
-            class="hidden sm:block h-16 w-auto object-contain overflow-hidden sm:h-32"
+            class="hidden sm:block h-16 w-auto object-contain overflow-hidden sm:h-32 sm:mt-2.5"
           />
           <div class="leading-tight sm:-ml-20">
             <span class="block text-xl font-bold">
