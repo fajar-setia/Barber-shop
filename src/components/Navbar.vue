@@ -17,18 +17,18 @@ const navLinks = [
 </script>
 
 <template>
-  <nav class="bg-white shadow-lg sticky top-0 z-50 w-full">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <nav class="shadow-lg sticky top-0 z-50 w-full">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- MAIN ROW -->
       <div class="flex items-center h-20">
         <!-- LOGO (KIRI, DEMPET) -->
-        <a href="/" class="inline-flex items-center gap-2 w-fit shrink-0">
+        <a href="/" class="lg:-ml-20 inline-flex items-center gap-2 w-fit shrink-0">
           <img
             :src="Logo"
             alt="Neat Hair Studio"
-            class="h-16 w-auto object-contain sm:h-32"
+            class="hidden sm:block h-16 w-auto object-contain overflow-hidden sm:h-32"
           />
-          <div class="leading-tight -ml-20">
+          <div class="leading-tight sm:-ml-20">
             <span class="block text-xl font-bold">
               <span class="text-zinc-600">Neat Hair </span> <span class="text-black">Studio</span>
             </span>
@@ -46,7 +46,7 @@ const navLinks = [
               v-for="link in navLinks"
               :key="link.name"
               :href="link.path"
-              class="text-blue-900 hover:text-blue-600 font-medium text-base transition-colors duration-200 relative group"
+              class="text-black hover:text-blue-600 font-medium text-base transition-colors duration-200 relative group"
             >
               {{ link.name }}
               <span
@@ -56,7 +56,7 @@ const navLinks = [
 
             <a
               href="/booking"
-              class="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-all duration-200 font-semibold shadow-md"
+              class="bg-blue-500 text-white px-6 py-2.5 rounded-xl hover:bg-zinc-800 transition-all duration-800 font-semibold shadow-md shadow-blue-500/50 hover:shadow-black/40 hover:scale-105"
             >
               Book Now
             </a>
@@ -65,7 +65,7 @@ const navLinks = [
           <!-- MOBILE BUTTON -->
           <button
             @click="toggleMenu"
-            class="lg:hidden text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded-lg p-2 ml-2"
+            class="lg:hidden text-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-800 rounded-lg p-2 ml-2"
             aria-label="Toggle Menu"
           >
             <svg
@@ -113,7 +113,7 @@ const navLinks = [
             :key="link.name"
             :href="link.path"
             @click="toggleMenu"
-            class="block px-4 py-3 text-blue-900 hover:bg-blue-50 hover:text-blue-600 rounded-lg text-base font-medium"
+            class="block px-4 py-3 text-back hover:bg-blue-50 hover:text-blue-600 rounded-lg text-base font-medium"
           >
             {{ link.name }}
           </a>
@@ -137,5 +137,6 @@ const navLinks = [
 
 nav {
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 </style>
